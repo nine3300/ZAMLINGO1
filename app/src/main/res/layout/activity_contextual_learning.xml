@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/p2">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/contextualLearningTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contextual Learning"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/lavender" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/contextualLearningDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore customs and linguistic nuances of Bemba and Nyanja-speaking communities. Dive into cultural insights and practical examples. Relating to the following;
+Cultural Practices
+Negotiating Prices and Purchasing Goods
+Marriage Traditions
+Traditional Foods
+Daily Customs
+Family Roles
+Folklore and Myths
+Music and Dance
+Economic Activities
+Health Practices"
+
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white" />
+
+    <!-- Input Field for User Query -->
+    <EditText
+        android:id="@+id/userQueryInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="What do you want to know about?"
+        android:padding="8dp"
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:inputType="text" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:text="Search"
+        android:background="@drawable/button_background"
+        android:textColor="@color/black" />
+
+    <!-- Scrollable Content for Results -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Placeholder for Results -->
+            <TextView
+                android:id="@+id/searchResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results will appear here..."
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        android:background="@drawable/button_background"
+        android:textColor="@color/black" />
+
+</LinearLayout>

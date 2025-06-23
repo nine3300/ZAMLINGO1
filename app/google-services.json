@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "341937435181",
+    "project_id": "zlingo1",
+    "storage_bucket": "zlingo1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341937435181:android:6585a1dc9c4d9f7f24fea4",
+        "android_client_info": {
+          "package_name": "com.example.zamlingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTDgQZEhHtublx1WEPQN6SUQS2ZhfWBM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+[versions]
+agp = "8.7.1"
+commonsCollections4 = "4.4"
+guavaVersion = "32.1.3-android"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
+firebaseAuth = "23.1.0"
+okhttp = "4.9.1"
+json = "20210307"
+coreKtx = "1.7.0"
+common = "0.10.0"
+recyclerview = "1.3.2"
+translate = "17.0.3"
+firebaseMlVision = "24.1.0"
+commonVersion = "18.11.0"
+firebase-bom = "32.0.0"
+mlkit-translate = "17.0.0"
+
+[libraries]
+commons-collections4 = { module = "org.apache.commons:commons-collections4", version.ref = "commonsCollections4" }
+google-guava = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-extension = { module = "androidx.lifecyvcle:lifecycle-extension" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+# OkHttp for making network requests
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+
+# JSON library for handling JSON responses
+json = { group = "org.json", name = "json", version.ref = "json" }
+
+gson = "com.google.code.gson:gson:2.10"
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+
+
+# Core KTX for Text-to-Speech support and Kotlin extensions
+# Core KTX for Text-to-Speech support and Kotlin extensions
+coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+common = { group = "com.google.ai.client.generativeai", name = "common", version.ref = "common" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+translate = { module = "com.google.mlkit:translate", version.ref = "translate" }
+firebase-ml-vision = { group = "com.google.firebase", name = "firebase-ml-vision", version.ref = "firebaseMlVision" }
+mlkit-common = { group = "com.google.mlkit", name = "common", version.ref = "commonVersion" }
+mlkit-translate = { module = "com.google.mlkit:translate", version.ref = "mlkit-translate" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }

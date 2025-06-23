@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/p2">
+
+    <!-- Progress Display -->
+    <TextView
+        android:id="@+id/progressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Progress: 0%"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Exercise Question -->
+    <TextView
+        android:id="@+id/grammarQuestionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Grammar question will appear here"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Multiple-choice options -->
+    <RadioGroup
+        android:id="@+id/optionsRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitAnswerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer"
+        android:layout_marginTop="16dp" />
+
+    <!-- Feedback Text -->
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="Feedback will be shown here"
+        android:visibility="gone" />
+
+    <!-- Next Question Button -->
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+</LinearLayout>
