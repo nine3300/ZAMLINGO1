@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/p2"
+    android:background="@color/white"
     tools:context=".activities.Login">
 
     <androidx.cardview.widget.CardView
@@ -21,7 +21,7 @@
             android:layout_width="393dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/lavender_border"
+            android:background="@color/light_blue"
             android:orientation="vertical"
             android:padding="24dp">
 
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:text="ZamLingo Login"
                 android:textAlignment="center"
-                android:textColor="@color/lavender"
+                android:textColor="@color/primary_blue"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/lavender_border"
+                android:background="@color/white"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
                 android:hint="Email"
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/lavender_border"
+                android:background="@color/white"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:hint="Password"
@@ -66,6 +66,8 @@
                 android:layout_marginTop="30dp"
                 android:text="Login"
                 android:textSize="18sp"
+                android:backgroundTint="@color/primary_blue"
+                android:textColor="@color/white"
                 app:cornerRadius="20dp" />
 
             <TextView
@@ -76,7 +78,7 @@
                 android:layout_marginTop="10dp"
                 android:padding="8dp"
                 android:text="Not yet registered? Sign Up"
-                android:textColor="@color/lavender"
+                android:textColor="@color/primary_blue"
                 android:textSize="18sp" />
 
             <!-- New Forgot Password TextView -->
@@ -88,7 +90,7 @@
                 android:layout_marginTop="10dp"
                 android:padding="8dp"
                 android:text="Forgot Password?"
-                android:textColor="@color/lavender"
+                android:textColor="@color/primary_blue"
                 android:textSize="18sp" />
 
         </LinearLayout>

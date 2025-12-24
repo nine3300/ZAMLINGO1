@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="@drawable/p2">
+    android:background="@color/white">
 
     <!-- EditText for user input -->
     <EditText
@@ -14,7 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter text"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:background="@color/light_blue"
         android:padding="12dp"
         android:inputType="textMultiLine"
         android:layout_marginBottom="16dp" />
@@ -26,7 +29,8 @@
         android:layout_height="wrap_content"
         android:text="Translate"
         android:textColor="@color/white"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/primary_blue"
+        app:cornerRadius="8dp"
         android:enabled="false" />
 
     <!-- TextView to display translated text -->
@@ -35,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Translation will appear here."
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:layout_marginTop="24dp" />
 </LinearLayout>

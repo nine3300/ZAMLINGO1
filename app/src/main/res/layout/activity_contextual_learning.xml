@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/p2">
+    android:background="@color/white">
 
     <!-- Title -->
     <TextView
@@ -17,7 +18,7 @@
         android:textStyle="bold"
         android:gravity="center"
         android:padding="8dp"
-        android:textColor="@color/lavender" />
+        android:textColor="@color/primary_blue" />
 
     <!-- Description -->
     <TextView
@@ -82,7 +83,7 @@ Health Practices"
                 android:text="Results will appear here..."
                 android:textSize="16sp"
                 android:padding="8dp"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
     </ScrollView>
@@ -94,7 +95,8 @@ Health Practices"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Back"
-        android:background="@drawable/button_background"
-        android:textColor="@color/black" />
+        android:backgroundTint="@color/primary_blue"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp" />
 
 </LinearLayout>
