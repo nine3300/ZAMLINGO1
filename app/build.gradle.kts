@@ -43,6 +43,9 @@ dependencies {
     implementation(platform(libs.firebase.bom))  // Firebase Bill of Materials
     implementation(libs.firebase.database)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore) {
+        exclude(group = "com.google.firebase", module = "firebase-common")
+    }
 
     // ML Kit and Translation dependencies
     implementation(libs.mlkit.common)
