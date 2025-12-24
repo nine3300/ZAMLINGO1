@@ -1,14 +1,32 @@
 package com.example.zamlingo.WordLibrary;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.DocumentSnapshot;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class WordLibrary {
-    private static Map<String, String> bembaDictionary;
+    private static Map<String, String> bembaDictionary = new HashMap<>();
+    private static boolean isLoaded = false;
+
+    public static void loadFromFirebase() {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("words").get().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                for (DocumentSnapshot doc : task.getResult()) {
+                    String english = doc.getId();
+                    String bemba = doc.getString("bemba");
+                    if (bemba != null) {
+                        bembaDictionary.put(english.toLowerCase(), bemba);
+                    }
+                }
+                isLoaded = true;
+            }
+        });
+    }
 
     static {
-        bembaDictionary = new HashMap<>();
-
         // A
         bembaDictionary.put("abdomen", "ifumo");
         bembaDictionary.put("above", "pa mulu");
@@ -3297,9 +3315,11 @@ public class WordLibrary {
 
 
 public static String getBembaTranslation(String englishWord) {
-    String lowerCaseWord = englishWord.toLowerCase();
-
-    return bembaDictionary.getOrDefault(lowerCaseWord,  "Word not found in the library");
-}
+    if (!isLoaded) {
+        return "Loading dictionary...";
     }
+    String lowerCaseWord = englishWord.toLowerCase();
+    return bembaDictionary.getOrDefault(lowerCaseWord, "Word not found in the library");
+}
+}
 

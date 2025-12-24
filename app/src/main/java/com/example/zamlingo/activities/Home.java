@@ -9,9 +9,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.zamlingo.R;
+import com.example.zamlingo.WordLibrary.WordLibrary;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Home extends AppCompatActivity {
 
@@ -26,6 +28,9 @@ public class Home extends AppCompatActivity {
         // Initialize Firebase Auth and Database
         auth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        // Load word library from Firebase
+        WordLibrary.loadFromFirebase();
 
         // Language buttons
         Button bembaButton = findViewById(R.id.lesson_1_button);
